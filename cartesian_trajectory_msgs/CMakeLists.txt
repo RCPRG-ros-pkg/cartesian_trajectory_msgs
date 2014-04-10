@@ -9,6 +9,8 @@ add_message_files(FILES
   CartesianImpedance.msg
   CartesianTrajectory.msg
   CartesianTrajectoryPoint.msg
+  CartesianImpedanceTrajectoryPoint.msg
+  CartesianImpedanceTrajectory.msg
   )
   
 
