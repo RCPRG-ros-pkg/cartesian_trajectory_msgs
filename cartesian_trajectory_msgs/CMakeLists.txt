@@ -3,7 +3,12 @@ cmake_minimum_required(VERSION 2.8.6)
 project(cartesian_trajectory_msgs)
 
 find_package(catkin REQUIRED
-  COMPONENTS std_msgs geometry_msgs message_generation)
+  COMPONENTS std_msgs geometry_msgs message_generation actionlib_msgs)
+
+add_action_files(
+  DIRECTORY action
+  FILES CartesianTrajectory.action
+)
 
 add_message_files(FILES
   CartesianImpedance.msg
@@ -11,6 +16,7 @@ add_message_files(FILES
   CartesianTrajectoryPoint.msg
   CartesianImpedanceTrajectoryPoint.msg
   CartesianImpedanceTrajectory.msg
+  CartesianTolerance.msg
   )
   
 
@@ -18,6 +24,7 @@ generate_messages(
   DEPENDENCIES
   std_msgs
   geometry_msgs
+  actionlib_msgs
   )
 
 
