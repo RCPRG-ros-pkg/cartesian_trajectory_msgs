@@ -1,6 +1,7 @@
 CartesianTrajectory trajectory
 
 CartesianTolerance path_tolerance
+geometry_msgs/Wrench wrench_constraint
 CartesianTolerance goal_tolerance
 
 ---
