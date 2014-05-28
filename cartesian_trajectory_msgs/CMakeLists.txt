@@ -7,7 +7,9 @@ find_package(catkin REQUIRED
 
 add_action_files(
   DIRECTORY action
-  FILES CartesianTrajectory.action
+  FILES
+  CartesianTrajectory.action
+  CartesianImpedance.action
 )
 
 add_message_files(FILES
