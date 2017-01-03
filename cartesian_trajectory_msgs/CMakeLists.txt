@@ -10,6 +10,7 @@ add_action_files(
   FILES
   CartesianTrajectory.action
   CartesianImpedance.action
+  CartImp.action
 )
 
 add_message_files(FILES
